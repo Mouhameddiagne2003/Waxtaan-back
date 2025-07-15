@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<groups>
+    <group>
+        <id>1000</id>
+        <name>goatt</name>
+        <members>
+            <member>4</member>
+            <member>3</member>
+        </members>
+    </group>
+</groups>

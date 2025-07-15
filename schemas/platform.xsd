@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Utilisateurs -->
+  <xs:element name="users">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="user" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string"/>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="avatar" type="xs:string" minOccurs="0"/>
+              <xs:element name="password" type="xs:string"/>
+              <xs:element name="status" type="xs:string" minOccurs="0"/>
+              <xs:element name="contacts" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="contact" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="groups" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="group" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="settings" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="setting" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="key" type="xs:string"/>
+                          <xs:element name="value" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Groupes -->
+  <xs:element name="groups">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="group" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string"/>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="members">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="member" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Messages -->
+  <xs:element name="messages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="message" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string"/>
+              <xs:element name="sender" type="xs:string"/>
+              <xs:element name="recipient" type="xs:string"/>
+              <xs:element name="content" type="xs:string"/>
+              <xs:element name="timestamp" type="xs:string"/>
+              <xs:element name="type" type="xs:string"/>
+              <xs:element name="file" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Conversations -->
+  <xs:element name="conversations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="conversation" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string"/>
+              <xs:element name="type" type="xs:string"/>
+              <xs:element name="participants">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="user" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="messages">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="message" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="id" type="xs:string"/>
+                          <xs:element name="sender" type="xs:string"/>
+                          <xs:element name="recipient" type="xs:string"/>
+                          <xs:element name="content" type="xs:string"/>
+                          <xs:element name="timestamp" type="xs:string"/>
+                          <xs:element name="type" type="xs:string"/>
+                          <xs:element name="file" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

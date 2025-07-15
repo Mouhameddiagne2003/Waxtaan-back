@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversations>
+  <conversation>
+    <id>conv1</id>
+    <type>private</type>
+    <participants>
+      <user>user1</user>
+      <user>user2</user>
+    </participants>
+    <messages>
+      <message>
+        <id>msg1</id>
+        <sender>user1</sender>
+        <recipient>user2</recipient>
+        <content>Bonjour !</content>
+        <timestamp>2025-07-13T11:50:45Z</timestamp>
+        <type>text</type>
+        <file></file>
+      </message>
+    </messages>
+  </conversation>
+</conversations>
