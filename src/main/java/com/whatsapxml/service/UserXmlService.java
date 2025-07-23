@@ -43,6 +43,10 @@ public class UserXmlService {
     }
 
     public void saveAllUsers(List<User> users) {
+        System.out.println("saveAllUsers: nb users = " + users.size());
+        for (User u : users) {
+            System.out.println("user: " + u.getId() + " - " + u.getName());
+        }
         try {
             JAXBContext context = JAXBContext.newInstance(UsersWrapper.class);
             Marshaller m = context.createMarshaller();
@@ -90,6 +94,7 @@ public class UserXmlService {
 
     public void updateUser(String id, User user) {
         List<User> users = getAllUsers();
+        System.out.println("updateUser: avant modif nb users = " + users.size());
         boolean found = false;
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getId().equals(id)) {
@@ -101,6 +106,7 @@ public class UserXmlService {
         if (!found) {
             throw new ResourceNotFoundException("Utilisateur avec l'id " + id + " non trouvé.");
         }
+        System.out.println("updateUser: après modif nb users = " + users.size());
         saveAllUsers(users);
     }
 

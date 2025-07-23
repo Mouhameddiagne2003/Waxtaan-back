@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import com.whatsapxml.service.MessageXmlService;
 
 import java.util.List;
 
@@ -51,6 +52,10 @@ public class UserController {
 
     @Autowired
     private FileStorageService fileStorageService;
+
+    // AJOUTE CECI :
+    @Autowired
+    private MessageXmlService messageXmlService;
 
     @GetMapping("/me")
     public User getCurrentUser(@RequestHeader("Authorization") String authHeader) {
@@ -117,5 +122,26 @@ public class UserController {
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable String id) {
         userXmlService.deleteUser(id);
+    }
+
+    @DeleteMapping("/{myId}/contacts/{contactId}")
+    public ResponseEntity<?> removeContactAndMessages(
+        @PathVariable String myId,
+        @PathVariable String contactId,
+        @RequestHeader("Authorization") String authHeader) {
+        String token = authHeader.replace("Bearer ", "");
+        String userIdFromToken = jwtUtil.extractUserId(token);
+        System.out.println("userIdFromToken=" + userIdFromToken + ", myId=" + myId);
+        if (!userIdFromToken.equals(myId)) {
+            return ResponseEntity.status(403).body("Non autorisé");
+        }
+        User me = userXmlService.getUserById(myId);
+        if (me.getContacts() != null) {
+            me.getContacts().removeIf(id -> id.equals(contactId) || id.equals("\"" + contactId + "\""));
+            userXmlService.updateUser(myId, me);
+        }
+        // Suppression des messages entre les deux utilisateurs
+        messageXmlService.deleteMessagesBetweenUsers(myId, contactId); // This line was commented out in the original file
+        return ResponseEntity.ok("Contact et messages supprimés");
     }
 }

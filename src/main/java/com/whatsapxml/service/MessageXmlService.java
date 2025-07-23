@@ -96,4 +96,13 @@ public class MessageXmlService {
         messages.removeIf(msg -> msg.getId().equals(id));
         saveAllMessages(messages);
     }
+
+    public void deleteMessagesBetweenUsers(String userId1, String userId2) {
+        List<Message> messages = getAllMessages();
+        messages.removeIf(msg ->
+            (msg.getSender().equals(userId1) && msg.getRecipient().equals(userId2)) ||
+            (msg.getSender().equals(userId2) && msg.getRecipient().equals(userId1))
+        );
+        saveAllMessages(messages);
+    }
 }

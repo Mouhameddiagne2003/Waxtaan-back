@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <messages>
     <message>
-        <id>1</id>
-        <sender>4</sender>
-        <recipient>3</recipient>
-        <content>salut</content>
-        <timestamp>2025-07-15T04:12:57.178Z</timestamp>
-        <type>text</type>
-    </message>
-    <message>
-        <id>2</id>
-        <sender>3</sender>
-        <recipient>4</recipient>
-        <content>oui cv</content>
-        <timestamp>2025-07-15T04:13:04.817Z</timestamp>
-        <type>text</type>
-    </message>
-    <message>
         <id>3</id>
         <sender>3</sender>
         <recipient>1000</recipient>
@@ -86,14 +70,6 @@
         <recipient>1000</recipient>
         <content>cc</content>
         <timestamp>2025-07-15T11:54:14.435Z</timestamp>
-        <type>text</type>
-    </message>
-    <message>
-        <id>12</id>
-        <sender>4</sender>
-        <recipient>3</recipient>
-        <content>hh</content>
-        <timestamp>2025-07-15T11:56:31.802Z</timestamp>
         <type>text</type>
     </message>
     <message>
@@ -167,6 +143,14 @@
         <recipient>5</recipient>
         <content>heyyy </content>
         <timestamp>2025-07-15T17:41:00.181Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>22</id>
+        <sender>4</sender>
+        <recipient>5</recipient>
+        <content>bb</content>
+        <timestamp>2025-07-15T18:31:59.859Z</timestamp>
         <type>text</type>
     </message>
 </messages>
