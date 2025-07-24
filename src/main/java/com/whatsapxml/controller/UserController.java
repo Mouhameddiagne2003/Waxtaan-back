@@ -18,22 +18,21 @@ public class UserController {
     @PostMapping("/{myId}/contacts")
     public ResponseEntity<?> addContact(@PathVariable String myId, @RequestBody String contactId) {
         User me = userXmlService.getUserById(myId);
-        System.out.println("contactid"+contactId);
         // Enlève les guillemets éventuels autour de l'id
         String contactIdClean = contactId.replaceAll("^\"|\"$", "").trim();
         User contact = userXmlService.getUserById(contactIdClean);
-        System.out.println("me"+me);
-        System.out.println("contact"+contact);
+        
         if (me == null || contact == null) {
             return ResponseEntity.status(404).body("Utilisateur ou contact non trouvé");
         }
-        if (me.getContacts() != null && me.getContacts().contains(contactId)) {
+        // Utilise contactIdClean partout
+        if (me.getContacts() != null && me.getContacts().contains(contactIdClean)) {
             return ResponseEntity.badRequest().body("Ce contact est déjà dans votre liste");
         }
         if (me.getContacts() == null) {
             me.setContacts(new java.util.ArrayList<>());
         }
-        me.getContacts().add(contactId);
+        me.getContacts().add(contactIdClean); // On ajoute l'ID nettoyé
         userXmlService.updateUser(myId, me);
         return ResponseEntity.ok("Contact ajouté");
     }
@@ -102,7 +101,7 @@ public class UserController {
         if (avatar != null && !avatar.isEmpty()) {
             try {
                 String fileName = fileStorageService.save(avatar);
-                String fileDownloadUri = "/api/files/" + fileName;
+                String fileDownloadUri = "/uploads/" + fileName; // Utilise le nouveau chemin
                 user.setAvatar(fileDownloadUri);
             } catch (Exception e) {
                 // Gérer l'erreur de sauvegarde de fichier

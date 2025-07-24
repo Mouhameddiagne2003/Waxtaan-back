@@ -76,7 +76,7 @@ public class AuthController {
         if (avatar != null && !avatar.isEmpty()) {
             try {
                 String fileName = fileStorageService.save(avatar);
-                String fileDownloadUri = "/api/files/" + fileName;
+                String fileDownloadUri = "/uploads/" + fileName;
                 user.setAvatar(fileDownloadUri);
             } catch (Exception e) {
                 user.setAvatar("https://api.dicebear.com/7.x/bottts/svg?seed=whatsappxml");

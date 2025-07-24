@@ -5,7 +5,7 @@
   <xs:element name="users">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="user" maxOccurs="unbounded">
+        <xs:element name="user" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" type="xs:string"/>
@@ -52,7 +52,7 @@
   <xs:element name="groups">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="group" maxOccurs="unbounded">
+        <xs:element name="group" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" type="xs:string"/>
@@ -75,7 +75,7 @@
   <xs:element name="messages">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="message" maxOccurs="unbounded">
+        <xs:element name="message" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" type="xs:string"/>
@@ -96,7 +96,7 @@
   <xs:element name="conversations">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="conversation" maxOccurs="unbounded">
+        <xs:element name="conversation" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" type="xs:string"/>

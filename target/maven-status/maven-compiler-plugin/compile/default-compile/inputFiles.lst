@@ -5,6 +5,7 @@ C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsa
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\controller\AuthController.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\model\User.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\model\Conversation.java
+C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\config\WebConfig.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\xml\ConversationsWrapper.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\controller\MessageController.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\service\GroupXmlService.java
@@ -16,7 +17,6 @@ C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsa
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\controller\UserController.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\service\MessageXmlService.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\exception\ResourceNotFoundException.java
-C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\controller\FileController.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\service\ConversationXmlService.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\service\FileStorageService.java
 C:\Users\bmd tech\Documents\Projets\WhatsAppXML\backend\src\main\java\com\whatsapxml\controller\GroupController.java

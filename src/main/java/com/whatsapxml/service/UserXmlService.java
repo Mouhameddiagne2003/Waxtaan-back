@@ -25,7 +25,7 @@ public class UserXmlService {
     public List<User> getAllUsers() {
         try {
             File file = new File(xmlFilePath);
-            if (!file.exists()) {
+            if (!file.exists() || file.length() == 0) { // Ajout de la vérification de la taille
                 return new ArrayList<>();
             }
             JAXBContext context = JAXBContext.newInstance(UsersWrapper.class);

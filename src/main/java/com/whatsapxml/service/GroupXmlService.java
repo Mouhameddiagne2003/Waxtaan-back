@@ -24,7 +24,7 @@ public class GroupXmlService {
     public List<Group> getAllGroups() {
         try {
             File file = new File(xmlFilePath);
-            if (!file.exists()) {
+            if (!file.exists() || file.length() == 0) { // Ajout de la vérification de la taille
                 return new ArrayList<>();
             }
             JAXBContext context = JAXBContext.newInstance(GroupsWrapper.class);

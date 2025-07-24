@@ -3,29 +3,28 @@
     <user>
         <id>1</id>
         <name>mouha</name>
-        <avatar>/api/files/7b094f16-ae92-4c7e-a0c7-bdca79772059_bannerImgMe.png</avatar>
-        <password>passer</password>
-        <status>active</status>
-        <contacts>
-            <contact>"2"</contact>
-        </contacts>
-        <groups>
-            <group>2000</group>
-            <group>3000</group>
-        </groups>
-    </user>
-    <user>
-        <id>2</id>
-        <name>assane</name>
         <avatar>https://api.dicebear.com/7.x/bottts/svg?seed=whatsappxml</avatar>
         <password>passer</password>
         <status>active</status>
         <contacts>
-            <contact>"1"</contact>
+            <contact>4</contact>
+            <contact>2</contact>
         </contacts>
         <groups>
-            <group>2000</group>
-            <group>3000</group>
+            <group>1000</group>
+        </groups>
+    </user>
+    <user>
+        <id>2</id>
+        <name>salif</name>
+        <avatar>https://api.dicebear.com/7.x/bottts/svg?seed=whatsappxml</avatar>
+        <password>passer</password>
+        <status>active</status>
+        <contacts>
+            <contact>1</contact>
+        </contacts>
+        <groups>
+            <group>1000</group>
         </groups>
     </user>
     <user>
@@ -34,8 +33,18 @@
         <avatar>https://api.dicebear.com/7.x/bottts/svg?seed=whatsappxml</avatar>
         <password>passer</password>
         <status>active</status>
+    </user>
+    <user>
+        <id>4</id>
+        <name>Chacha</name>
+        <avatar>https://api.dicebear.com/7.x/bottts/svg?seed=whatsappxml</avatar>
+        <password>passer</password>
+        <status>active</status>
         <contacts>
-            <contact>"1"</contact>
+            <contact>1</contact>
         </contacts>
+        <groups>
+            <group>1000</group>
+        </groups>
     </user>
 </users>
