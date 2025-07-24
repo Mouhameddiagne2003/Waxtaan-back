@@ -153,4 +153,36 @@
         <timestamp>2025-07-15T18:31:59.859Z</timestamp>
         <type>text</type>
     </message>
+    <message>
+        <id>23</id>
+        <sender>2</sender>
+        <recipient>1</recipient>
+        <content>bonjour</content>
+        <timestamp>2025-07-23T21:04:45.289Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>24</id>
+        <sender>1</sender>
+        <recipient>2</recipient>
+        <content>cv</content>
+        <timestamp>2025-07-23T21:04:59.337Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>25</id>
+        <sender>1</sender>
+        <recipient>2</recipient>
+        <content>cv bien </content>
+        <timestamp>2025-07-23T21:15:25.043Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>26</id>
+        <sender>3</sender>
+        <recipient>1</recipient>
+        <content>salam</content>
+        <timestamp>2025-07-23T21:27:02.245Z</timestamp>
+        <type>text</type>
+    </message>
 </messages>
