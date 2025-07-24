@@ -6,6 +6,13 @@
         <avatar>/api/files/7b094f16-ae92-4c7e-a0c7-bdca79772059_bannerImgMe.png</avatar>
         <password>passer</password>
         <status>active</status>
+        <contacts>
+            <contact>"2"</contact>
+        </contacts>
+        <groups>
+            <group>2000</group>
+            <group>3000</group>
+        </groups>
     </user>
     <user>
         <id>2</id>
@@ -16,6 +23,10 @@
         <contacts>
             <contact>"1"</contact>
         </contacts>
+        <groups>
+            <group>2000</group>
+            <group>3000</group>
+        </groups>
     </user>
     <user>
         <id>3</id>

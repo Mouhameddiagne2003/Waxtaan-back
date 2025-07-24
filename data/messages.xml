@@ -185,4 +185,68 @@
         <timestamp>2025-07-23T21:27:02.245Z</timestamp>
         <type>text</type>
     </message>
+    <message>
+        <id>27</id>
+        <sender>1</sender>
+        <recipient>3</recipient>
+        <content>salam </content>
+        <timestamp>2025-07-24T15:54:39.763Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>28</id>
+        <sender>3</sender>
+        <recipient>1</recipient>
+        <content>heyy</content>
+        <timestamp>2025-07-24T15:55:16.917Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>29</id>
+        <sender>3</sender>
+        <recipient>1</recipient>
+        <content>heyy</content>
+        <timestamp>2025-07-24T15:55:25.547Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>30</id>
+        <sender>3</sender>
+        <recipient>1</recipient>
+        <content>cv</content>
+        <timestamp>2025-07-24T15:58:03.158Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>31</id>
+        <sender>1</sender>
+        <recipient>2000</recipient>
+        <content>cv</content>
+        <timestamp>2025-07-24T15:58:59.678Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>32</id>
+        <sender>2</sender>
+        <recipient>2000</recipient>
+        <content>oui cv</content>
+        <timestamp>2025-07-24T16:03:21.399Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>33</id>
+        <sender>2</sender>
+        <recipient>3000</recipient>
+        <content>heyy</content>
+        <timestamp>2025-07-24T16:04:47.308Z</timestamp>
+        <type>text</type>
+    </message>
+    <message>
+        <id>34</id>
+        <sender>2</sender>
+        <recipient>1</recipient>
+        <content>b</content>
+        <timestamp>2025-07-24T16:05:41.031Z</timestamp>
+        <type>text</type>
+    </message>
 </messages>

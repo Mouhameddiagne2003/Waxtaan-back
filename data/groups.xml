@@ -8,4 +8,20 @@
             <member>3</member>
         </members>
     </group>
+    <group>
+        <id>2000</id>
+        <name>goat</name>
+        <members>
+            <member>2</member>
+            <member>1</member>
+        </members>
+    </group>
+    <group>
+        <id>3000</id>
+        <name>goaatttt</name>
+        <members>
+            <member>1</member>
+            <member>2</member>
+        </members>
+    </group>
 </groups>
