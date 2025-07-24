@@ -78,7 +78,7 @@ public class UserController {
         userXmlService.addUser(user);
     }
 
-    @PutMapping("/me")
+    @PutMapping(value = "/me", consumes = "multipart/form-data")
     public ResponseEntity<User> updateUserProfile(@RequestHeader("Authorization") String authHeader,
                                                   @RequestParam("name") String name,
                                                   @RequestParam("status") String status,
